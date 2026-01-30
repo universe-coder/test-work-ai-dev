@@ -1,0 +1,19 @@
+{
+  "name": "ai-browser-agent",
+  "version": "1.0.0",
+  "description": "AI agent for autonomous browser automation",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "start:interactive": "cross-env INTERACTIVE=1 node src/index.js",
+    "browser": "node src/launch-browser.js",
+    "postinstall": "playwright install chromium"
+  },
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.3.1",
+    "openai": "^4.52.0",
+    "playwright": "^1.40.0"
+  }
+}
